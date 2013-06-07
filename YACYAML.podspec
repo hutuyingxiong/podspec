@@ -7,5 +7,5 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'libYACYAML.a'
   s.library = 'YACYAML'
   s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/YACYAML"' }
-  s.dependency     'libYAML', '~> 0.1.4'
+  s.dependency 'LibYAML', '~> 0.1.4'
 end
