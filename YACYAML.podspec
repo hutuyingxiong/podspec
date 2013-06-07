@@ -5,6 +5,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/steve21124/YACYAML.git' }      # 4
   s.source_files = 'YACYAML', 'External/**/*.{h,m}'                                         # 5
   s.preserve_paths = 'libYACYAML.a'
-  s.library = 'CocoYAML'
+  s.library = 'YACYAML'
   s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/YACYAML"' }
+  s.dependency     'libYAML', '~> 0.1.4'
 end
