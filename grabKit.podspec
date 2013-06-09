@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
 
   def s.post_install(target_installer)
     puts "\nGenerating grabKit resources bundle\n".yellow if config.verbose?
-    Dir.chdir File.join(config.project_pods_root, 'SSToolkit') do
+    Dir.chdir File.join(config.project_pods_root, 'grabKit') do
       command = "xcodebuild -project grabKit.xcodeproj -target GrabKitBundle CONFIGURATION_BUILD_DIR=./"
       command << " 2>&1 > /dev/null" unless config.verbose?
       unless system(command)
