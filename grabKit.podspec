@@ -39,23 +39,6 @@ Pod::Spec.new do |s|
     gdata.requires_arc = false
   end
 
-  def s.post_install(target_installer)
-    puts "\nGenerating grabKit resources bundle\n".yellow if config.verbose?
-    Dir.chdir File.join(config.project_pods_root, 'grabKit') do
-      command = "xcodebuild -project grabKit.xcodeproj -target GrabKitBundle CONFIGURATION_BUILD_DIR=./"
-      command << " 2>&1 > /dev/null" unless config.verbose?
-      unless system(command)
-        raise ::Pod::Informative, "Failed to generate grabKit resources bundle"
-      end
-    end
-    if Version.new(Pod::VERSION) >= Version.new('0.16.999')
-      script_path = target_installer.copy_resources_script_path
-    else
-      script_path = File.join(config.project_pods_root, target_installer.target_definition.copy_resources_script_name)
-    end
-    File.open(script_path, 'a') do |file|
-      file.puts "install_resource 'grabKit/GrabKitBundle.bundle'"
-    end
-  end
+
 
 end
