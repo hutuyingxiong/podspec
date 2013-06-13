@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   
   s.source_files = 'grabKit/grabKit/**/*.{h,m}'
 
-  s.dependency 'Facebook-iOS-SDK', '~> 3.2.0'
+  s.dependency 'Facebook-iOS-SDK', '~> 3.5.1'
   s.dependency 'ISO8601DateFormatter', '~> 0.6'
   s.dependency 'MBProgressHUD', '~> 0.6'
   s.dependency 'NVUIGradientButton', '~> 1.3.0'
