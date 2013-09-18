@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
     s.dependency 'libextobjc/EXTScope', '>= 0.2.5'
     s.dependency 'ObjectiveSugar'
-    s.dependency 'ReactiveCocoa', '>= 1.8.0'
+    s.dependency 'ReactiveCocoa'
 
     s.dependency 'BrynKit/Main'               , '>= 1.2.5'
     s.dependency 'BrynKit/RACHelpers'         , '>= 1.2.5'
