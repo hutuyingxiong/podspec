@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
     s.dependency 'MGBox2'
 
-    s.dependency 'libextobjc/EXTScope', '>= 0.3'
+    s.dependency 'libextobjc/EXTScope', '>= 0.2.5'
     s.dependency 'ObjectiveSugar'
     s.dependency 'ReactiveCocoa', '>= 1.8.0'
 
