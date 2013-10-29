@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
     end
 
     Dir.chdir File.join(sandbox_root, 'grabKit') do
-      command = "xcodebuild -project grabKit/grabKit/grabKit.xcodeproj -target grabKitResources CONFIGURATION_BUILD_DIR=../Resources"
+      command = "xcodebuild -project grabKit/grabKit.xcodeproj -target grabKitResources CONFIGURATION_BUILD_DIR=../Resources"
       command << " 2>&1 > /dev/null"
       unless system(command)
         raise ::Pod::Informative, "Failed to generate grabKit resources bundle"
