@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
     gdata.requires_arc = false
   end
 
-
+  s.preserve_paths = 'grabKit.xcodeproj', 'grabKitResources'
   def s.post_install(target)
     if Version.new(Pod::VERSION) >= Version.new('0.16.999')
       sandbox_root = target.sandbox_dir
