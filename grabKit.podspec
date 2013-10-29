@@ -11,14 +11,14 @@ Pod::Spec.new do |s|
 					* iPhone/iPad
 					* ... and more to come.
 					DESC
-  s.homepage     = "https://github.com/pierrotsmnrd/grabKit"
-  s.screenshots  = "https://github.com/pierrotsmnrd/grabKit/blob/master/doc/demo.gif"
+  s.homepage     = "https://github.com/steve21124/grabKit"
+  s.screenshots  = "https://github.com/steve21124/grabKit/blob/master/doc/demo.gif"
 
   s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
 
   s.author       = { "Pierre-Olivier Simonard" => "pierre.olivier.simonard@gmail.com" }
   
-  s.source       = { :git => "https://github.com/pierrotsmnrd/grabKit.git", :tag => "v1.3.2" }
+  s.source       = { :git => "https://github.com/steve21124/grabKit.git", :tag => "v1.3.2" }
 
 
   s.platform = :ios, '5.1'
