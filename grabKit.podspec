@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
 
   s.resources = 'grabKit/grabKit/**/*.{xib}','grabKit/grabKit/grabKit/GrabKitPicker/Resources/en.lproj/*.strings'
-  s.resource_bundle = { 'grabKitResources' => ['grabKit/grabKit/**/*.{xib}','grabKit/grabKit/grabKit/GrabKitPicker/Resources/en.lproj/*.strings'] }
+  s.resource_bundle = { 'grabKitBundle' => ['grabKit/grabKit/**/*.{xib}','grabKit/grabKit/grabKit/GrabKitPicker/Resources/en.lproj/*.strings'] }
 
   s.dependency 'Facebook-iOS-SDK', '~> 3.2.0'
   s.dependency 'ISO8601DateFormatter', '~> 0.6'
