@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.resources = "LASharekit/LASharekit.bundle", "LASharekit/*.xib"
   
-  s.dependency 'REComposeViewController'
+  s.dependency 'REComposeViewController', '2.2'
   s.dependency 'RDActionSheet'   
   s.dependency 'Facebook-iOS-SDK', '>= 3.2.1'      
   
