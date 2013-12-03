@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LASharekit"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "Share kit"
   s.homepage     = "https://github.com/steve21124/LASharekit"
   s.license      = 'MIT'
@@ -14,4 +14,6 @@ Pod::Spec.new do |s|
   s.dependency 'REComposeViewController'
   s.dependency 'RDActionSheet'   
   s.dependency 'Facebook-iOS-SDK', '>= 3.2.1'      
+  
+  s.ios.frameworks = 'Accounts', 'AdSupport', 'Social','MessageUI'
 end
