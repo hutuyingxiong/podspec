@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/jallen/AFS3Client"
   s.license      = 'MIT'
   s.author       = { "Jared Allen" => "jared@redcact.us" }
-  s.source       = { :git => "https://github.com/jallen/AFS3Client" }
+  s.source       = { :git => "https://github.com/jallen/AFS3Client.git" }
 
   s.source_files = 'AFS3Client'
   s.requires_arc = true
