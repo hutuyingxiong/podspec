@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author       = { "Author" => "author@gmail.com" }
   s.source       = { :git => "https://github.com/steve21124/LASharekit.git" }
 
-  s.source_files = 'LASharekit/DKLiveBLur/**/*.{h,m}' # 5
+  s.source_files = 'LASharekit/*.{h,m}' # 5
   s.requires_arc = true
   s.resources = "LASharekit/LASharekit.bundle", "LASharekit/*.xib"
   
