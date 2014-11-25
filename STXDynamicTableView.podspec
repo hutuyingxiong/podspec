@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.frameworks = 'QuartzCore', 'UIKit'
   s.resources = "STXDynamicTableView/**/*.xib"
   s.requires_arc = true
+  s.dependency 'TTTAttributedLabel'
 end
